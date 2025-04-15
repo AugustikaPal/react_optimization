@@ -30,7 +30,7 @@ function isPrime(number) {
   return true;
 }
 
-const Counter = memo( function Counter({ initialCount }) {
+const Counter = memo( function Counter({ initialCount },[initialCount]) {
   log('<Counter /> rendered', 1);
 
 //this maks sure that the isPrime would only change when the value of initialCount changes and would not be changes if counter changes
